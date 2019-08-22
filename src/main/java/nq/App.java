@@ -3,15 +3,20 @@
  */
 package nq;
 
-public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+import java.util.Vector;
+import java.util.stream.IntStream;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-        for( String a: args) {
-        	System.out.println(a);
-        }
+    	
+    	int size = Integer.valueOf(args[0]);    	
+    	Vector<Integer> v = new Vector<Integer>();
+    	IntStream.range(0, size).forEachOrdered(i -> {
+    		v.add(i);
+    	});
+    	
+    	Solution s = new Solution(v);
+    	
+    	s.show();
     }
 }
