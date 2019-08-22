@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.stream.IntStream;
 
 public class Solution extends Exception {
-	/* Extends exception to ease backtracking bailout */
+	/* Extends exception to ease backtracking bailout. I prefer to avoid ifs :) */
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private ArrayList<Integer> vec;
 	
 	public Solution(ArrayList<Integer> v) {
