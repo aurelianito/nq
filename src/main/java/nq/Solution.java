@@ -15,8 +15,8 @@ public class Solution extends Exception {
 	
 	public void show() {
 		int size = vec.size();
-		IntStream.range(0, size).forEachOrdered(i -> {
-			IntStream.range(0, size).forEachOrdered( j -> {
+		IntStream.range(0, size).forEachOrdered(j -> {
+			IntStream.range(0, size).forEachOrdered( i -> {
 				System.out.print( vec.get(i) == j ? "o " : ". ");
 			});
 			System.out.println();
