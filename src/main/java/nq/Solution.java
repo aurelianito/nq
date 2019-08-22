@@ -3,8 +3,8 @@ package nq;
 import java.util.ArrayList;
 import java.util.stream.IntStream;
 
+/* Extends exception to ease backtracking bailout. I prefer to avoid ifs :) */
 public class Solution extends Exception {
-	/* Extends exception to ease backtracking bailout. I prefer to avoid ifs :) */
 	
 	private static final long serialVersionUID = 1L;
 	private ArrayList<Integer> vec;
