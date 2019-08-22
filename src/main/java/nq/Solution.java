@@ -1,14 +1,14 @@
 package nq;
 
-import java.util.Vector;
+import java.util.ArrayList;
 import java.util.stream.IntStream;
 
 public class Solution extends Exception {
 	/* Extends exception to ease backtracking bailout */
 	
-	private Vector<Integer> vec;
+	private ArrayList<Integer> vec;
 	
-	public Solution(Vector<Integer> v) {
+	public Solution(ArrayList<Integer> v) {
 		vec = v;
 	}
 	
