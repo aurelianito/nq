@@ -32,3 +32,9 @@ application {
     // Define the main class for the application
     mainClassName = 'nq.App'
 }
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'nq.App'
+    }
+}
