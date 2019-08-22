@@ -9,7 +9,7 @@ Place N queens on an NxN chess board so that none of them attack each other (the
 
 ## Build
 
-Run `gradle jar` in the same directory as is this file
+Run `gradle jar` in the root directory
 
 It generates `build/libs/nq.jar` 
 
